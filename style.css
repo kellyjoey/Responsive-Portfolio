@@ -1,0 +1,311 @@
+* {box-sizing: border-box;}
+
+#pagewrap {
+		margin: 0 auto;
+}
+
+.container{
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+		background-color: gray;
+		padding:0;
+		line-height: 150%;
+	}
+
+body {	
+	display:block;
+	background-color: gray;
+	margin: 0;		
+	}
+
+
+
+.header {
+		height: 100px;
+		overflow:auto;
+		background-color: #ffffff;
+		border-style: solid;
+		border-width: 2px;
+		border-color: #cccccc;
+		}
+
+.name {	
+		margin: 0px 0px 0px 100px;
+		height: 100px;
+		padding: 35px 20px 20px 20px;
+		float:left;
+		color:white;
+		background-color: #4aaaa5;
+		font-family: 'Georgia', Times, Times New Roman, serif;
+		}
+
+ol {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    list-style-type: none;
+	margin-right: 240px;
+	}
+
+
+.nav {
+	text-decoration:none;
+	color: #777777;
+	float:right;
+    padding: 5px 20px 5px 20px;
+    margin-top: 20px;
+    display: block;
+	}
+
+#port{
+	border-left: 2px solid #dddddd;
+	border-right: 2px solid #dddddd;
+}
+
+br{
+	clear:both;
+}
+
+.content {
+	overflow: auto;
+	width: 600px;
+	background-color: #ffffff;
+    padding: 25px;
+	float: left;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #dddddd;
+	position:relative;	
+	margin-bottom: 30px;
+	margin-left: 100px;
+	}
+
+.sectionHead {
+	color: #4aaaa5;
+	border-bottom: 2px solid #dddddd;
+	padding-bottom: 20px;
+	font-size: 28px;
+	}
+
+.profile {
+	width:200px;
+	height:238px;
+	float:left;	
+	padding:10px;
+}
+
+p {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: #777777;
+	}
+
+#sidebar {
+	background-color: #ffffff;
+    padding:20px;
+    float: left;
+    width: 280px;
+    border-style: solid;
+	border-width: 1px;
+	border-color: #dddddd;	
+	margin-right: 65px;
+	margin-left: 40px;
+	}
+
+h2 {
+	color:#4aaaa5;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	border-bottom: 2px solid #dddddd;
+	padding-bottom: 20px;
+	margin-top:0px;
+}
+
+.connect {
+		width: 60px;
+		height: 60px;
+		margin: 5px;
+		}
+
+footer {
+    clear: both;
+    background-color: #666666;
+    padding: 20px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: white;
+	font-size: 10px;
+	text-align: center;
+	border-top: 5px solid #4aaaa5;
+	width: 100%;
+	margin-top: 20px;
+}
+
+/* GALLERY SPECIFIC STYLING */
+
+.gallery {
+		width: 180px;
+		height: 160px;
+		margin: 10px 30px 10px 30px;	
+		}
+
+/* CONTACT SPECIFIC STYLING*/
+
+form {
+	color: #777777;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif; 
+	padding: 5px; 
+	}
+
+input {
+		padding: 5px;
+		border: 1px solid #999999;
+		margin-bottom: 5px;
+		width: 100%;
+}
+
+.message {
+		 width: 100%; 
+		 height: 250px; 
+		 border: 1px solid #999999; 
+		 padding: 5px; 
+		 margin-top: 5px;
+		}
+
+.button {
+		background-color: #4aaaa5;
+		color: white;
+		font-size: 16px;
+		font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+		padding: 12px 28px;
+		width: 33%;
+		}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 980px) {
+	#pagewrap {
+		width: 95%;
+		font-size: 95%;
+	}
+
+	.content {
+		width: 50%;
+		padding: 3% 4%;
+	}
+
+	ol{
+		width: 95%;	
+	}
+
+	.gallery {
+		float: none;
+		width: 60%;
+		height: auto;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#sidebar {
+		width: 30%;
+		float:right;
+		margin: 0px 0px 0px 0px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#pagewrap {
+		font-size: 90%;
+	}
+
+	.header {
+		height: auto;
+	}
+
+	.name{
+		margin: 0px 0px 0px 0px;
+	}
+
+	ol{
+		margin-right: 0px;
+	}
+
+	.content {
+		width: auto;
+		float: none;
+		margin: 20px 0;
+	}
+
+	.gallery {
+		display: inline;
+		float: none;
+		width: 40%;
+		height: auto;
+		margin-right: 40px;
+		padding: 1% 2%;
+	}
+
+	#sidebar {
+		width: 100%;
+		float: none;
+		margin: 0;
+	}
+}
+
+
+@media screen and (max-width: 640px) {
+	.header {
+		height: auto;
+		position: static;
+	}
+
+	.name {
+		width: 100%;
+		text-align: center;
+	}
+
+	.nav {
+		width: 33.333%;
+		text-align: center;
+		margin-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	#port {
+		border: none;
+	}
+
+	.content {
+		width: auto;
+		float: none;
+		margin: 0px 0px 15px 0px;
+	}
+
+	.profile {
+		float: none;
+		width: 50%;
+		height: auto;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.gallery {
+		float: none;
+		width: 60%;
+		height: auto;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#sidebar {
+		width: 100%;
+		float: none;
+		margin: 0;
+	}
+
+}
+
+
+
+
+
+
